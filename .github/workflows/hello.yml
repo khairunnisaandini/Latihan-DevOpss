@@ -1,0 +1,21 @@
+name: Latihan DevOps
+
+on: [push]
+
+jobs:
+  latihan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Say Hello
+        run: echo "Halo Nisa 🚀, ini workflow pertama di repo Latihan-DevOps"
+
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
